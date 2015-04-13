@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main_view"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/top_view"
+        android:layout_width="fill_parent"
+        android:layout_height="50dip"
+        android:background="#ff404040"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/back_button2"
+            android:layout_width="wrap_content"
+            android:layout_height="50dip"
+            android:onClick="back"
+            android:text="Back" />
+
+        <LinearLayout
+            android:id="@+id/top_bar2"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="#ff404040"
+            android:gravity="right"
+            android:orientation="horizontal" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/main_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:id="@+id/side_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <View
+                android:layout_width="0dip"
+                android:layout_height="0dip"
+                android:layout_weight="1" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="10dip"
+                android:layout_weight=".25"
+                android:text="Linear V_X"/>
+            <org.ros.android.view.RosTextView
+                android:id="@+id/rostextx2"
+                android:layout_width="wrap_content"
+                android:layout_height="5dip"
+                android:layout_weight=".25"
+                android:text="Hi Andrew!"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="5dip"
+                android:layout_weight=".25"
+                android:text="Angular Theta_Z"/>
+            <org.ros.android.view.RosTextView
+                android:id="@+id/rostextTheta2"
+                android:layout_width="wrap_content"
+                android:layout_height="5dip"
+                android:layout_weight=".2"
+                android:text="And Theta, of course"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="5dip"
+                android:layout_weight=".25"
+                android:text="Linear Pose X"/>
+            <org.ros.android.view.RosTextView
+                android:id="@+id/rosposex"
+                android:layout_width="wrap_content"
+                android:layout_height="5dip"
+                android:layout_weight=".2"
+                android:text="Linear Pose X"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="5dip"
+                android:layout_weight=".25"
+                android:text="Linear Pose Y"/>
+            <org.ros.android.view.RosTextView
+                android:id="@+id/rosposey"
+                android:layout_width="wrap_content"
+                android:layout_height="5dip"
+                android:layout_weight=".2"
+                android:text="Linear Pose Y"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="5dip"
+                android:layout_weight=".25"
+                android:text="Linear Pose Z"/>
+            <org.ros.android.view.RosTextView
+                android:id="@+id/rosposez"
+                android:layout_width="wrap_content"
+                android:layout_height="5dip"
+                android:layout_weight=".2"
+                android:text="Linear Pose Z"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="5dip"
+                android:text="Angular Pose X"
+                android:layout_weight="0.2" />
+            <org.ros.android.view.RosTextView
+                android:id="@+id/rosposetx"
+                android:layout_width="wrap_content"
+                android:layout_height="5dip"
+                android:layout_weight=".2"
+                android:text="Angular Pose X"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="5dip"
+                android:layout_weight=".25"
+                android:text="Angular Pose Y"/>
+            <org.ros.android.view.RosTextView
+                android:id="@+id/rosposety"
+                android:layout_width="wrap_content"
+                android:layout_height="5dip"
+                android:layout_weight=".2"
+                android:text="Angular Pose Y"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="5dip"
+                android:layout_weight=".25"
+                android:text="Angular Pose Z"/>
+            <org.ros.android.view.RosTextView
+                android:id="@+id/rosposetz"
+                android:layout_width="wrap_content"
+                android:layout_height="5dip"
+                android:layout_weight=".2"
+                android:text="Angular Pose Z"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="5dip"
+                android:layout_weight=".25"
+                android:text="Quaternion"/>
+            <org.ros.android.view.RosTextView
+                android:id="@+id/rosposeq"
+                android:layout_width="wrap_content"
+                android:layout_height="5dip"
+                android:layout_weight=".2"
+                android:text="Quaternion"/>
+            <View
+                android:layout_width="0dip"
+                android:layout_height="0dip"
+                android:layout_weight="1" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout><!-- From: file:/home/turtlebot/android/src/android_apps/teleop/src/main/res/layout/odom.xml -->
